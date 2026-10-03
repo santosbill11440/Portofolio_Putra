@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putra Izhar Gumilar | Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="left">
+            <button id="menuBtn" class="menu-btn" aria-label="Buka menu">
+                <span></span><span></span><span></span>
+            </button>
+            <span class="brand">Putra Izhar Gumilar</span>
+        </div>
+        <div class="right">
+            <button id="reportBtn" class="pill-btn">Laporan</button>
+            <button id="authBtn" class="pill-btn solid">Masuk</button>
+        </div>
+    </header>
+
+    <div id="overlay" class="overlay"></div>
+
+    <aside id="drawer" class="drawer">
+        <div class="drawer-head">
+            <h3>Menu</h3>
+            <button id="closeBtn" class="close-btn" aria-label="Tutup menu">&times;</button>
+        </div>
+        <nav>
+            <button class="nav-item active" data-page="home"><span>01</span> Beranda</button>
+            <button class="nav-item" data-page="about"><span>02</span> Tentang Saya</button>
+            <button class="nav-item" data-page="skills"><span>03</span> Keahlian</button>
+            <button class="nav-item" data-page="projects"><span>04</span> Proyek</button>
+            <button class="nav-item" data-page="rating"><span>05</span> Penilaian</button>
+            <button class="nav-item" data-page="pengaturan"><span>06</span> Pengaturan</button>
+            <button class="nav-item" data-page="contact"><span>07</span> Kontak</button>
+        </nav>
+        <p class="drawer-foot">Mahasiswa Sains Data</p>
+    </aside>
+
+    <main>
+        <!-- BERANDA -->
+        <section id="home" class="page active">
+            <div class="hero-photo">
+                <div class="bubble b1"></div>
+                <div class="bubble b2"></div>
+                <div class="bubble b3"></div>
+                <div class="bubble b4"></div>
+
+                <div class="hero-glass">
+                    <p class="tag">Selamat datang di laman saya</p>
+                    <h1>Putra Izhar<br>Gumilar</h1>
+                    <h2>Mahasiswa Sains Data</h2>
+                    <p class="lead">
+                        Saya sedang mempelajari cara mengolah data mentah menjadi wawasan yang
+                        bermanfaat, mulai dari statistika, pemrograman, hingga machine learning.
+                    </p>
+                    <div class="btn-row">
+                        <button class="btn primary" data-goto="projects">Lihat Proyek</button>
+                        <button class="btn ghost" data-goto="contact">Hubungi Saya</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="feature-row">
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <div>
+                            <h4>Berbasis Data</h4>
+                            <p>Setiap keputusan didasarkan pada analisis, bukan asumsi.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <h4>Belajar Cepat</h4>
+                            <p>Terbuka terhadap hal baru dan senang mencoba pendekatan berbeda.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🤝</div>
+                        <div>
+                            <h4>Terbuka Berkolaborasi</h4>
+                            <p>Senang bertukar pikiran dan mengerjakan proyek bersama.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG -->
+        <section id="about" class="page">
+            <div class="content">
+                <h2 class="title">Tentang Saya</h2>
+                <p class="lead">
+                    Saya Putra Izhar Gumilar, mahasiswa semester satu Sains Data di Indonesia.
+                    Dalam tiga hingga empat tahun ke depan, target saya adalah memperkuat dasar
+                    matematika dan statistika, menguasai pengolahan data, serta membangun
+                    portofolio yang berisi proyek nyata.
+                </p>
+                <h3 class="sub">Yang Sedang Dipelajari</h3>
+                <div class="chips">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Statistika</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEAHLIAN -->
+        <section id="skills" class="page">
+            <div class="content">
+                <h2 class="title">Keahlian</h2>
+                <p class="lead">Sebagai mahasiswa semester satu, berikut kemampuan yang sedang saya bangun dari dasar.</p>
+
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h3 class="sub">Pemrograman</h3>
+                        <div class="skill-bar">
+                            <div class="skill-top"><span>Python</span><span>60%</span></div>
+                            <div class="bar"><div class="fill" style="width:60%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-top"><span>HTML &amp; CSS</span><span>70%</span></div>
+                            <div class="bar"><div class="fill" style="width:70%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-top"><span>JavaScript</span><span>45%</span></div>
+                            <div class="bar"><div class="fill" style="width:45%"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="sub">Data &amp; Statistika</h3>
+                        <div class="skill-bar">
+                            <div class="skill-top"><span>Statistika Dasar</span><span>55%</span></div>
+                            <div class="bar"><div class="fill" style="width:55%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-top"><span>Spreadsheet</span><span>65%</span></div>
+                            <div class="bar"><div class="fill" style="width:65%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-top"><span>SQL</span><span>30%</span></div>
+                            <div class="bar"><div class="fill" style="width:30%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sub">Peralatan yang Digunakan</h3>
+                <div class="chips">
+                    <span>VS Code</span>
+                    <span>Git &amp; GitHub</span>
+                    <span>Jupyter Notebook</span>
+                    <span>Google Colab</span>
+                </div>
+
+                <h3 class="sub">Rencana Empat Tahun ke Depan</h3>
+                <div class="roadmap">
+                    <div class="road-item">
+                        <span class="road-dot">1</span>
+                        <div>
+                            <h4>Tahun Pertama — Fondasi</h4>
+                            <p>Matematika, statistika dasar, logika pemrograman, Python dan SQL dasar.</p>
+                        </div>
+                    </div>
+                    <div class="road-item">
+                        <span class="road-dot">2</span>
+                        <div>
+                            <h4>Tahun Kedua — Pengolahan Data</h4>
+                            <p>Data cleaning, visualisasi, statistika lanjutan, mulai proyek nyata.</p>
+                        </div>
+                    </div>
+                    <div class="road-item">
+                        <span class="road-dot">3</span>
+                        <div>
+                            <h4>Tahun Ketiga — Machine Learning</h4>
+                            <p>Model prediksi, dasar deep learning, mengikuti kompetisi data.</p>
+                        </div>
+                    </div>
+                    <div class="road-item">
+                        <span class="road-dot">4</span>
+                        <div>
+                            <h4>Tahun Keempat — Portofolio &amp; Karier</h4>
+                            <p>Riset/skripsi, magang, portofolio lengkap, siap bekerja di bidang data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYEK -->
+        <section id="projects" class="page">
+            <div class="content">
+                <h2 class="title">Proyek</h2>
+                <div class="grid">
+                    <article class="card">
+                        <span class="badge">Web</span>
+                        <h3>Situs Portofolio</h3>
+                        <p>Situs ini sendiri — dibangun dengan menu geser, mode penilaian, dan laporan masukan.</p>
+                        <small>HTML &middot; CSS &middot; JavaScript</small>
+                    </article>
+                    <article class="card">
+                        <span class="badge">Data</span>
+                        <h3>Data Analysis (segera)</h3>
+                        <p>Eksplorasi dataset publik Indonesia dengan visualisasi.</p>
+                        <small>Python &middot; Pandas</small>
+                    </article>
+                    <article class="card">
+                        <span class="badge">ML</span>
+                        <h3>Model Prediksi (segera)</h3>
+                        <p>Proyek machine learning sederhana untuk prediksi dari data.</p>
+                        <small>Python &middot; Scikit-learn</small>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENILAIAN -->
+        <section id="rating" class="page">
+            <div class="content">
+                <h2 class="title">Beri Penilaian</h2>
+                <p class="lead">Menurut Anda, bagaimana situs ini? Silakan beri penilaian bintang satu hingga lima.</p>
+                <div id="stars" class="stars">
+                    <button data-v="1">★</button><button data-v="2">★</button>
+                    <button data-v="3">★</button><button data-v="4">★</button>
+                    <button data-v="5">★</button>
+                </div>
+                <textarea id="ratingComment" class="input" rows="3" placeholder="Komentar (opsional)"></textarea>
+                <button id="ratingSubmit" class="btn primary">Kirim Penilaian</button>
+                <p id="ratingMsg" class="msg"></p>
+                <p id="ratingSummary" class="summary"></p>
+            </div>
+        </section>
+
+        <!-- PENGATURAN -->
+        <section id="pengaturan" class="page">
+            <div class="content">
+                <h2 class="title">Pengaturan</h2>
+                <p class="lead">Kelola profil dan akun Anda di sini.</p>
+
+                <div class="settings-grid">
+                    <div class="settings-card">
+                        <h3 class="card-title">Profil Saya</h3>
+                        <label class="field-label">Nama Tampilan</label>
+                        <input id="displayName" class="input" type="text" placeholder="Masukkan nama Anda">
+                        <button id="saveProfile" class="btn solid small">Simpan Profil</button>
+                        <p id="profileMsg" class="msg"></p>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3 class="card-title">Akun &amp; Masuk</h3>
+                        <p id="settingsAccStatus" class="field-value">Belum masuk</p>
+                        <button id="settingsLoginBtn" class="btn outline small">Kelola Akun</button>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3 class="card-title">Laporan</h3>
+                        <p class="field-value">Ada masukan atau menemukan kendala? Silakan kirim laporan.</p>
+                        <button id="settingsReportBtn" class="btn outline small">Buka Laporan</button>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3 class="card-title">Data &amp; Privasi</h3>
+                        <p class="field-value">Hapus data tamu (penilaian/laporan) yang tersimpan di peramban ini.</p>
+                        <button id="clearLocalBtn" class="btn outline small">Hapus Data Lokal</button>
+                        <p id="clearMsg" class="msg"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="contact" class="page">
+            <div class="content">
+                <h2 class="title">Kontak</h2>
+                <p class="lead">Tertarik untuk berdiskusi, berkolaborasi, atau sekadar bertukar pikiran? Silakan hubungi saya melalui:</p>
+                <div class="links">
+                    <a href="mailto:emaillo@gmail.com">Email</a>
+                    <a href="https://github.com/usernamelo" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/usernamelo" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL MASUK -->
+    <div id="authModal" class="modal">
+        <button class="modal-close" data-close>&times;</button>
+        <div id="authForm">
+            <h3>Masuk / Daftar</h3>
+            <p class="hint">Masuk bersifat opsional. Dengan akun terverifikasi, penilaian dan laporan Anda tersimpan secara permanen.</p>
+            <input id="email" class="input" type="email" placeholder="Email">
+            <input id="password" class="input" type="password" placeholder="Kata sandi (min. 6 karakter)">
+            <div class="row">
+                <button id="loginBtn" class="btn solid">Masuk</button>
+                <button id="registerBtn" class="btn outline">Daftar</button>
+            </div>
+            <button id="resetBtn" class="link-btn">Lupa kata sandi?</button>
+        </div>
+        <div id="authAccount" hidden>
+            <h3>Akun Anda</h3>
+            <p id="accEmail"></p>
+            <p id="accStatus" class="status"></p>
+            <div class="row">
+                <button id="resendBtn" class="btn outline">Kirim Ulang Verifikasi</button>
+                <button id="checkBtn" class="btn outline">Saya Sudah Verifikasi</button>
+            </div>
+            <button id="logoutBtn" class="btn solid">Keluar</button>
+        </div>
+        <p id="authMsg" class="msg"></p>
+    </div>
+
+    <!-- MODAL LAPORAN -->
+    <div id="reportModal" class="modal">
+        <button class="modal-close" data-close>&times;</button>
+        <h3>Laporan</h3>
+        <p class="hint">Temukan kendala atau punya saran? Silakan tulis di bawah ini.</p>
+        <select id="reportType" class="input">
+            <option>Kendala / Error</option>
+            <option>Saran</option>
+            <option>Lainnya</option>
+        </select>
+        <textarea id="reportText" class="input" rows="4" placeholder="Tulis laporan Anda..."></textarea>
+        <button id="reportSubmit" class="btn solid">Kirim Laporan</button>
+        <p id="reportMsg" class="msg"></p>
+        <h4>Laporan Saya</h4>
+        <ul id="reportList" class="report-list"></ul>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
